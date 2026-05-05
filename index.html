@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM STUDIOS | Professional Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
+        
+        :root {
+            --primary: #ffffff;
+            --accent: #25D366; /* WhatsApp Green */
+            --bg: #080808;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            scroll-behavior: smooth;
+        }
+
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .bento-card {
+            background: linear-gradient(145deg, #121212 0%, #0d0d0d 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bento-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #fff 20%, #666 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .experience-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        /* Abstract Background Elements */
+        .glow {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow" style="top: -10%; left: -10%;"></div>
+    <div class="glow" style="bottom: -10%; right: -10%;"></div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-8 py-8 max-w-7xl mx-auto">
+        <div class="heading-font text-2xl font-bold tracking-tighter">OM STUDIOS</div>
+        <a href="https://wa.me/917990133529" target="_blank" class="bg-white text-black px-6 py-2 rounded-full text-xs font-bold tracking-widest hover:bg-gray-200 transition">
+            HIRE VIA WHATSAPP
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-32 px-6 max-w-7xl mx-auto text-center md:text-left">
+        <div class="inline-flex items-center space-x-3 experience-badge px-4 py-2 rounded-full mb-8">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-300">2+ Years of Industry Experience</span>
+        </div>
+        
+        <h1 class="heading-font text-6xl md:text-9xl font-bold mb-8 leading-[0.9] tracking-tighter gradient-text">
+            ELITE VIDEO <br> PRODUCTION.
+        </h1>
+        
+        <div class="grid md:grid-cols-2 items-end gap-12">
+            <p class="text-gray-400 text-lg md:text-xl font-light leading-relaxed">
+                Transforming raw clips into high-end cinematic assets for premium brands and agencies. Based in Vadodara, delivering globally.
+            </p>
+            <div class="flex justify-center md:justify-end">
+                <div class="text-right border-r-2 border-white/10 pr-6">
+                    <div class="text-4xl font-bold heading-font">24h</div>
+                    <div class="text-[10px] text-gray-500 uppercase tracking-widest">Average Turnaround</div>
+                </div>
+                <div class="text-right pl-6">
+                    <div class="text-4xl font-bold heading-font">100%</div>
+                    <div class="text-[10px] text-gray-500 uppercase tracking-widest">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bento Grid Services -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Large Card -->
+            <div class="md:col-span-2 bento-card p-10 rounded-3xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold mb-4 heading-font">iPhone X <br> Cinematography</h3>
+                    <p class="text-gray-500 max-w-md mb-8">Professional shoot-and-edit workflow. I capture cinematic details personally and craft them into polished reels or posts.</p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> 4K Mobile Capture</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Specialized Furniture/Product Shoots</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Aesthetic Lighting Setup</li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-camera-retro absolute -bottom-10 -right-10 text-[12rem] text-white/[0.02]"></i>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 heading-font">Clip-to-Edit</h3>
+                <p class="text-gray-500 text-sm mb-6">Send your raw footage via Drive. I handle the sound design, color grading, and viral hooks.</p>
+                <div class="text-xs font-bold text-white uppercase tracking-widest border-b border-white/20 pb-1 inline-block">Pro Workflow</div>
+            </div>
+
+            <!-- Small Card 2 -->
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 heading-font">Daily <br> Handling</h3>
+                <p class="text-gray-500 text-sm mb-6">Consistent account management with regular posting of Reels and Posts to beat the algorithm.</p>
+                <div class="text-xs font-bold text-white uppercase tracking-widest border-b border-white/20 pb-1 inline-block">Growth Focused</div>
+            </div>
+
+            <!-- Client Focus Card -->
+            <div class="md:col-span-2 bento-card p-10 rounded-3xl border-l-4 border-l-white">
+                <h3 class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-6 font-bold">Trusted Partner Of</h3>
+                <div class="flex flex-wrap gap-12 items-center">
+                    <div>
+                        <div class="text-2xl font-extrabold italic mb-1">INSTYLE</div>
+                        <div class="text-[9px] text-gray-600 uppercase tracking-widest font-bold">Furniture World</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-light tracking-tighter mb-1">VADIFY.IN</div>
+                        <div class="text-[9px] text-gray-600 uppercase tracking-widest font-bold">Lead Editor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Contact -->
+    <section class="py-40 text-center px-6">
+        <h2 class="heading-font text-4xl md:text-6xl font-bold mb-12">LET'S BUILD <br> YOUR BRAND.</h2>
+        <a href="https://wa.me/917990133529" target="_blank" class="group relative inline-flex items-center justify-center px-12 py-6 overflow-hidden font-bold text-white transition-all bg-[#25D366] rounded-full hover:scale-105">
+            <span class="relative flex items-center text-lg">
+                <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> START CHAT ON WHATSAPP
+            </span>
+        </a>
+        <div class="mt-8 text-gray-600 uppercase tracking-[0.4em] text-[10px]">
+            Direct Number: +91 79901 33529
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-white/5 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-700 tracking-[0.5em] uppercase font-bold">
+        <div>OM STUDIOS // VADODARA</div>
+        <div class="mt-4 md:mt-0 italic opacity-50">Established 2024</div>
+    </footer>
+
+</body>
+</html>
